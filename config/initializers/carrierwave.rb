@@ -10,7 +10,6 @@ CarrierWave.configure do |config|
   # Use AWS storage if in production
   if Rails.env.production?
     CarrierWave.configure do |config|
-      config.storage = :fog
     end
   end
   
@@ -20,6 +19,8 @@ CarrierWave.configure do |config|
     :aws_secret_access_key  => '<your secret key goes here>',     # required
     :region                 => 'us-east-2'                        # optional, defaults to 'us-east-1'
   }
+        config.storage = :fog
+
   config.fog_directory  = 'lam-fall'               # required
   #config.fog_host       = 'https://assets.example.com'           # optional, defaults to nil
   #config.fog_public     = false                                  # optional, defaults to true
