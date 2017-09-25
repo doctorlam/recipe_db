@@ -7,7 +7,14 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded"> 
+  <%= link_to "Recipe App", root_path, class: 'navbar-brand' %>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav navbar-right">
+      <li><%= link_to "About", pages_about_path %></li>
+    </ul>
+  </div>
+</nav>
   <body>
     <%= yield %>
   </body>
