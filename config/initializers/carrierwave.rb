@@ -10,13 +10,12 @@ CarrierWave.configure do |config|
   # Use AWS storage if in production
   if Rails.env.production?
     CarrierWave.configure do |config|
-    end
-  end
+  
   
   config.fog_credentials = {
-    :provider               => 'AWS',                             # required
-    :aws_access_key_id      => '',            # required
-    :aws_secret_access_key  => '',     # required
+    :provider               => 'AWS',
+      :aws_access_key_id      => "YOUR AMAZON ACCESS KEY",
+      :aws_secret_access_key  => "YOUR AMAZON SECRET KEY",
     :region                 => 'us-east-2'                        # optional, defaults to 'us-east-1'
   }
         config.storage = :fog
@@ -26,3 +25,5 @@ CarrierWave.configure do |config|
   #config.fog_public     = false                                  # optional, defaults to true
   config.fog_attributes = {'Cache-Control'=>'max-age=315576000'}  # optional, defaults to {}
 end
+  end
+  end
