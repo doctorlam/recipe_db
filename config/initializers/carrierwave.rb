@@ -20,7 +20,7 @@ CarrierWave.configure do |config|
     :aws_secret_access_key  => '<your secret key goes here>',     # required
     :region                 => 'es-east-2'                        # optional, defaults to 'us-east-1'
   }
-  config.fog_directory  = '<bucket name goes here>'               # required
+  config.fog_directory  = 'lam-fall'               # required
   #config.fog_host       = 'https://assets.example.com'           # optional, defaults to nil
   #config.fog_public     = false                                  # optional, defaults to true
   config.fog_attributes = {'Cache-Control'=>'max-age=315576000'}  # optional, defaults to {}
