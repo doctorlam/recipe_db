@@ -18,7 +18,7 @@ CarrierWave.configure do |config|
     :provider               => 'AWS',                             # required
     :aws_access_key_id      => '<your key goes here>',            # required
     :aws_secret_access_key  => '<your secret key goes here>',     # required
-    :region                 => 'es-east-2'                        # optional, defaults to 'us-east-1'
+    :region                 => 'us-east-2'                        # optional, defaults to 'us-east-1'
   }
   config.fog_directory  = 'lam-fall'               # required
   #config.fog_host       = 'https://assets.example.com'           # optional, defaults to nil
