@@ -16,16 +16,14 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
 gem 'nested_form_fields'
 gem 'carrierwave', '~> 1.0'
-gem 'fog-aws'
- 
+
 group :production do 
 	gem 'pg'
-	 gem 'rails_12factor'
-
+	gem 'rails_12factor'
 end 
-group :development, :test do
-	gem 'sqlite3'
 
+group :development, :test do
+  gem 'sqlite3'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
